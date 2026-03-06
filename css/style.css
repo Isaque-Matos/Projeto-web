@@ -18,5 +18,9 @@
 
 .sessaoProduto {
     background: linear-gradient(#dad);
-    padding-top: none;
+    padding-top: 20px;
+}
+
+.divProduto {
+    padding-bottom: 100px;
 }
