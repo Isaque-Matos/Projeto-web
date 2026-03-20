@@ -20,7 +20,7 @@ nav {
     right: 100px;
     top: 20px;
     position: absolute;
-    padding-top: 40px;
+    padding-top: 80px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -78,7 +78,7 @@ nav li{
 .mapa {
     text-align: center;
     background: linear-gradient(#fff, #e3e3e3);
-    padding-top: 110px;
+    padding-top: 250px;
 }
 
 /*Sessão Nossos Produtos*/
@@ -128,12 +128,13 @@ nav li{
 .video {
     text-align: center;
     background: linear-gradient(#e3e3e3, #06080b);
+    padding-top: 30px;
 }
 
 /*Estilização do Footer*/
 footer {
     padding: 30px 10px 10px 0;
-    background: url("../img/rodape.png"); /*Colocar a localização da imagem dentro da url*/
+    background: url("../img/rodape.png"); 
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
@@ -142,18 +143,26 @@ footer {
 
 .logo_footer {
     width: 20%;
+    padding-left: 80%;
 }
 
 
 footer p {
     font-weight: bold;
     color: white;
-    width: 100%;
-    text-align: left;
+    text-align: right;
     font-size: 20px;
-    padding-left: 10px;
 }
 
 #whats {
     color: green;
+}
+
+#insta {
+    color: blue;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
