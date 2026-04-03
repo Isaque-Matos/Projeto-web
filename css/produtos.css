@@ -1,0 +1,21 @@
+/*Título*/
+.carrinho {
+    width:5%;
+    padding-top: 2%;
+    padding-left: 2px;
+}
+
+.produtos {
+    padding-left: 10px;
+    padding-top: 2%;
+    font-size: 40px;
+    font-weight: 40px;
+    color: black;
+    font-family: cursive;
+
+}
+
+.secaoProdutos {
+    display: flex;
+}
+
