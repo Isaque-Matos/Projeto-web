@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+    <link rel="shortcut icon" href="../img/claw.ico" type="image/x-icon">
+    <title>Urban Claws</title>
+    <script type="text/JavaScript"> 
+      alert('Conheça nossos produtos!');
+    </script>
+</head>
+<body>
+   <header>
+    <div class="divHeader">
+      <img src="../img/logo.png" title="Urban Claws" alt="Urban Claws logo" class="logo">
+      <nav>
+        <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li>Produtos</li>
+        <li>Contato</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--Conteúdo da Página-->
+  <main>
+    <section class="secaoProdutos">
+    <h2 class="produtos">🛒Produtos</h2>
+    </section>
+
+    <!--Data-->
+    <p class="dataAtual"><script>
+      data = new Date
+
+      // Dia da semana
+      diaSemana = new Array('Domingo','Segunda-Feira','Terça-Feira','Quarta-Feira','Quinta-Feira','Sexta-feira','Sábado')
+      mes = new Array('Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro')
+      document.write(diaSemana[data.getDay()] + ', ' + data.getDate() + ' de ' + mes[data.getMonth()] + ' de ' + data.getFullYear())
+    </script></p>
+
+  <!--Exibição dos Produtos-->
+  <div class="container">
+    <div class="card">
+      <img src="../img/produtos/bone.png">
+      <h2>Boné</h2>
+      <p>Boné preto com design minimalista e detalhe de garra em destaque</p>
+      <p class="preco">R$ 59,90</p>
+    </div>
+
+    <div class="card">
+      <img src="../img/produtos/camiseta.png">
+      <h2>Camiseta</h2>
+      <p>Camiseta preta básica com detalhe discreto de garra no peito</p>
+      <p class="preco">R$ 89,90</p>
+    </div>
+
+    <div class="card">
+      <img src="../img/produtos/jaqueta.png">
+      <h2>Jaqueta</h2>
+      <p>Jaqueta verde com acabamento moderno e detalhe de garra</p>
+      <p class="preco">R$ 179,90</p>
+    </div>
+
+    <div class="card">
+      <img src="../img/produtos/tenis.png">
+      <h2>Tenis</h2>
+      <p>Tênis preto com design moderno e detalhe lateral de garra</p>
+      <p class="preco">R$ 229,90</p>
+    </div>
+
+    <div class="card">
+      <img src="../img/produtos/chinelo.png">
+      <h2>Chinelo</h2>
+      <p>Chinelo preto minimalista com design confortável e detalhe discreto de garra, ideal para o dia a dia.</p>
+      <p class="preco">R$ 79,90</p>
+    </div>
+
+      <div class="card">
+      <img src="../img/produtos/cachecol.png">
+      <h2>Cachecol</h2>
+      <p>Lã macia, trama encorpada, logotipo de garra bordado em contraste dourado</p>
+      <p class="preco">R$ 79,90</p>
+    </div>
+
+     <div class="card">
+      <img src="../img/produtos/oculos.png">
+      <h2>Óculos</h2>
+      <p>Armação em polímero fosco de alta resistência com lentes polarizadas e proteção UV400</p>
+      <p class="preco">R$ 249,90</p>
+    </div>
+
+
+     <div class="card">
+      <img src="../img/produtos/short.png">
+      <h2>Shorts</h2>
+      <p>Short esportivo com design urbano, tecido leve e detalhe exclusivo de garra</p>
+      <p class="preco">R$ 89,90</p>
+    </div>
+
+  </div>
+</main>
+    <!--Rodapé da página-->
+  <footer>
+    <img src="../img/logo.png" class="logo_footer">
+    <p class="textoFooter">Encomendas on-line: 
+      <a href="https://wa.me/5511956779999" target="_blank"><i class="fa fa-whatsapp" id="whats"></i> (11) 95677-9999 |</a> 
+      <a href="https://www.instagram.com/senaimecatronica/" target="_blank"><i class="fa fa-instagram" id="insta"></i> @UrbanClaws</a> 
+    </p>
+  </footer>
+</body>
+</html>
