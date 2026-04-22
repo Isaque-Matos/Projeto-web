@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/produtos.css">
     <link rel="shortcut icon" href="../img/claw.ico" type="image/x-icon">
-    <title>Produtos</title>
+    <title>Urban Claws</title>
+    <script type="text/JavaScript"> 
+      alert('Conheça nossos produtos!');
+    </script>
 </head>
 <body>
    <header>
@@ -25,10 +28,18 @@
   <!--Conteúdo da Página-->
   <main>
     <section class="secaoProdutos">
-    <img src="../img/carrinho.png" alt="carrinho de supermercado" class ="carrinho"> 
-    <h2 class="produtos">Produtos</h2>
+    <h2 class="produtos">🛒Produtos</h2>
     </section>
 
+    <!--Data-->
+    <p class="dataAtual"><script>
+      data = new Date
+
+      // Dia da semana
+      diaSemana = new Array('Domingo','Segunda-Feira','Terça-Feira','Quarta-Feira','Quinta-Feira','Sexta-feira','Sábado')
+      mes = new Array('Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro')
+      document.write(diaSemana[data.getDay()] + ', ' + data.getDate() + ' de ' + mes[data.getMonth()] + ' de ' + data.getFullYear())
+    </script></p>
 
   <!--Exibição dos Produtos-->
   <div class="container">
@@ -88,7 +99,7 @@
       <p>Short esportivo com design urbano, tecido leve e detalhe exclusivo de garra</p>
       <p class="preco">R$ 89,90</p>
     </div>
-    
+
   </div>
 </main>
     <!--Rodapé da página-->
