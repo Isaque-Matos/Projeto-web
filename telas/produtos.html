@@ -9,6 +9,12 @@
     <title>Urban Claws</title>
     <script type="text/JavaScript"> 
       alert('Conheça nossos produtos!');
+
+      // Função para abrir a POP-UP
+      function abrirDetalhes(nome,img,desc){
+        url = `pop_produtos.html?produto=${encodeURIComponent(nome)}&imagem=${encodeURIComponent(img)}&descricao=${encodeURIComponent(desc)}`
+        window.open(url, "_blank", "width=800,height=700")
+      }
     </script>
 </head>
 <body>
@@ -43,49 +49,62 @@
 
   <!--Exibição dos Produtos-->
   <div class="container">
-    <div class="card">
+    <script>
+      descricaoBone = "Boné preto com design clean e moderno, destacando o símbolo de garra em laranja na parte frontal.\nPossui aba curva e acabamento resistente, ideal para compor looks urbanos com atitude." 
+      descricaoCamiseta = "Camiseta preta básica com detalhe discreto de garra no peito"
+      descricaoJaqueta = "Jaqueta verde com acabamento moderno e detalhe de garra"
+      descricaoTenis = "Tênis preto com design moderno e detalhe lateral de garra"
+      descricaoChinelo = "Chinelo preto minimalista com design confortável e detalhe discreto de garra, ideal para o dia a dia"
+      descricaoCachecol = "Confeccionado em lã macia com trama trabalhada, unindo conforto térmico e sofisticação.\nPossui o logotipo de garra bordado em contraste dourado, ideal para compor looks de inverno com atitude."
+      descricaoOculos = "Armação em polímero fosco de alta resistência com lentes polarizadas e proteção UV400.\nDesign ergonômico com detalhe da garra em dourado nas hastes. Acompanha estojo de proteção em sarja."
+      descricaoShorts = "Short esportivo com design urbano, tecido leve e detalhe exclusivo de garra"
+
+    </script>
+    <div class="card" onClick="abrirDetalhes('Boné','../img/produtos/bone.png', descricaoBone)">
       <img src="../img/produtos/bone.png">
       <h2>Boné</h2>
       <p>Boné preto com design minimalista e detalhe de garra em destaque</p>
       <p class="preco">R$ 59,90</p>
     </div>
 
-    <div class="card">
+    
+
+    <div class="card" onClick="abrirDetalhes('Camiseta','../img/produtos/camiseta.png', descricaoCamiseta)">
       <img src="../img/produtos/camiseta.png">
       <h2>Camiseta</h2>
       <p>Camiseta preta básica com detalhe discreto de garra no peito</p>
       <p class="preco">R$ 89,90</p>
     </div>
 
-    <div class="card">
+    <div class="card" onClick="abrirDetalhes('Jaqueta','../img/produtos/jaqueta.png', descricaoJaqueta)">
       <img src="../img/produtos/jaqueta.png">
       <h2>Jaqueta</h2>
       <p>Jaqueta verde com acabamento moderno e detalhe de garra</p>
       <p class="preco">R$ 179,90</p>
     </div>
 
-    <div class="card">
+    <div class="card" onClick="abrirDetalhes('Tenis', '../img/produtos/tenis.png', descricaoTenis)">
       <img src="../img/produtos/tenis.png">
       <h2>Tenis</h2>
-      <p>Tênis preto com design moderno e detalhe lateral de garra</p>
+      <p>Tenis preto com design moderno e detalhe lateral de garra</p>
       <p class="preco">R$ 229,90</p>
     </div>
 
-    <div class="card">
+    <div class="card" onClick="abrirDetalhes('Chinelo', '../img/produtos/chinelo.png', descricaoChinelo)">
       <img src="../img/produtos/chinelo.png">
       <h2>Chinelo</h2>
-      <p>Chinelo preto minimalista com design confortável e detalhe discreto de garra, ideal para o dia a dia.</p>
+      <p>Chinelo preto minimalista com design confortável e detalhe discreto de garra, ideal para o dia a dia</p>
       <p class="preco">R$ 79,90</p>
     </div>
 
-      <div class="card">
+      <div class="card" onClick="abrirDetalhes('Cachecol', '../img/produtos/cachecol.png', descricaoCachecol)">
       <img src="../img/produtos/cachecol.png">
       <h2>Cachecol</h2>
       <p>Lã macia, trama encorpada, logotipo de garra bordado em contraste dourado</p>
       <p class="preco">R$ 79,90</p>
     </div>
 
-     <div class="card">
+     <div class="card" onClick="abrirDetalhes('Óculos', '../img/produtos/oculos.png', descricaoOculos)">
       <img src="../img/produtos/oculos.png">
       <h2>Óculos</h2>
       <p>Armação em polímero fosco de alta resistência com lentes polarizadas e proteção UV400</p>
@@ -93,7 +112,7 @@
     </div>
 
 
-     <div class="card">
+     <div class="card" onClick="abrirDetalhes('Shorts', '../img/produtos/short.png', descricaoShorts)">
       <img src="../img/produtos/short.png">
       <h2>Shorts</h2>
       <p>Short esportivo com design urbano, tecido leve e detalhe exclusivo de garra</p>
